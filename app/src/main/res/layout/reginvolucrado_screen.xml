@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".reginvolucrado_screen">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="30dp">
+
+            <EditText
+                android:id="@+id/etPersonaId"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/etDatosLaboralesId"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="0"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/etDatosDireccionId"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="invisible" />
+
+            <!--  <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="5dp"
+                  android:layout_marginTop="15dp"
+                  android:text="Datos Personales"
+                  android:textColor="#0DA617"
+                  android:textSize="18dp"
+                  android:textStyle="bold" />-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+                    style="@style/ColorTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Datos Personales"
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="* DNI :" />
+
+                <EditText
+                    android:id="@+id/etDNI"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:hint="Número de DNI"
+                    android:inputType="number"
+                    android:maxLength="8" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal"
+
+                >
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="* Nombres :">
+
+                    <requestFocus />
+                </TextView>
+
+                <EditText
+                    android:id="@+id/etNombres"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:hint="Nombres"
+                    android:inputType="textCapSentences" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="* Ape. Paterno :" />
+
+                <EditText
+                    android:id="@+id/etApePaterno"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:hint="Apellido Paterno"
+                    android:inputType="textCapSentences" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="* Ape. Materno :" />
+
+                <EditText
+                    android:id="@+id/etApeMaterno"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:hint="Apellido Materno"
+                    android:inputType="textCapSentences" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="* Sexo :" />
+
+                <RadioGroup
+                    android:id="@+id/rgSexo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbMasculino"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Masculino"
+
+
+                        />
+
+                    <RadioButton
+                        android:id="@+id/rbFemenino"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Femenino"
+
+                        />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="* Estado Civil :" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:background="@drawable/spinner_background">
+
+                    <Spinner
+                        android:id="@+id/spEstadoCivil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        >
+
+                    </Spinner>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="* Telefonos :" />
+
+                <EditText
+                    android:id="@+id/etTelefonos"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:hint="Teléfonos"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="* Distrito :" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:background="@drawable/spinner_background">
+
+                    <Spinner
+                        android:id="@+id/spDistrito"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="* Direccion :"
+
+                    />
+
+                <EditText
+                    android:id="@+id/etDireccion"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:hint="Dirección"
+                    android:inputType="textCapSentences" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="* Referencia :" />
+
+                <EditText
+                    android:id="@+id/etReferencia"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:hint="Referencia del Lugar"
+                    android:inputType="textCapSentences" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Email :" />
+
+                <EditText
+                    android:id="@+id/etCorreo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:hint="Correo de Contacto"
+                    android:inputType="textEmailAddress"
+                    android:lines="2" />
+
+            </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/llDatosLaborales"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/ColorTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Datos Laborales"
+
+                        />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/llTrabajo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="(*) Trabajo :" />
+
+
+                    <RadioGroup
+                        android:id="@+id/rgFiltro"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rbIndependiente"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Independiente"
+
+
+                            />
+
+                        <RadioButton
+                            android:id="@+id/rbDependiente"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dependiente"
+
+                            />
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/llEstablecimiento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="(*) Establecimiento :">
+
+                        <requestFocus />
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/etEstablecimiento"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:hint="Mercado/Tienda/etc."
+                        android:inputType="textCapSentences" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/llTipoEstablecimiento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="(*) Tipo Estab. :">
+
+                        <requestFocus />
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:background="@drawable/spinner_background">
+
+                        <Spinner
+                            android:id="@+id/spTipoEstablecimiento"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            >
+
+                        </Spinner>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/llFechaInicio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="(*) Fecha Inicio :" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4">
+
+                        <EditText
+                            android:id="@+id/etFechaInicio"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:editable="false"
+                            android:hint="Fecha Inicio Laboral"></EditText>
+
+                        <ImageButton
+                            android:id="@+id/ibFechaInicio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/editText"
+                            android:layout_toRightOf="@+id/editText"
+                            android:background="@drawable/ic_action_today"
+                            android:cropToPadding="true" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/llCargo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="(*) Cargo Laboral :" />
+
+                    <EditText
+                        android:id="@+id/etCargo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:hint="Cargo que Ocupa"
+                        android:inputType="textCapSentences"
+                        android:lines="2" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/llCentroTrabajo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="(*) Nom. Empresa :" />
+
+                    <EditText
+                        android:id="@+id/etCentroTrabajo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:hint="Nombre de la Empresa"
+                        android:inputType="textCapSentences"
+                        android:lines="2" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/llTipoTrabajo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="(*) Tipo Trabajo :" />
+
+
+                    <RadioGroup
+                        android:id="@+id/rgTipoTrabajo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rbFormal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Formal"
+
+
+                            />
+
+                        <RadioButton
+                            android:id="@+id/rbInformal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Informal"
+
+                            />
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/llRUC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="RUC :" />
+
+                    <EditText
+                        android:id="@+id/etRuc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:hint="RUC de la Empresa"
+                        android:inputType="number"
+                        android:lines="2"
+                        android:maxLength="11" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/llNeto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="(*) Ingreso Neto :" />
+
+                    <EditText
+                        android:id="@+id/etNeto"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:hint="Ingreso Neto"
+                        android:inputType="numberDecimal"
+
+                        android:lines="2" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/llSustento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="(*) Sustento Ingreso :">
+
+                        <requestFocus />
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:background="@drawable/spinner_background">
+
+                        <Spinner
+                            android:id="@+id/spSustento"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            >
+
+                        </Spinner>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

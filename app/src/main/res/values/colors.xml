@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#0DA617</color>
+    <color name="colorPrimaryDark">#079411</color>
+    <color name="colorAccent">#0DA617</color>
+    <color name="green">#009900</color>
+    <color name="tvSpinnerItemTextColor">#FFFFFF</color>
+    <color name="tvSpinnerItemBackground">#388E3C</color>
+    <color name="tvSpinnerItemListTextColor">#FFFFFF</color>
+    <color name="llSpinnerItemListBackground">#388E3C</color>
+    <color name="background_holo_light">#fff3f3f3</color>
+    <color name="background_holo_dark">#ff000000</color>
+    <!-- buttons -->
+    <color name="green_button_drop_disabled">@color/white_button_drop_disabled</color>
+    <color name="green_button_disabled">@color/white_button_disabled</color>
+    <color name="green_button_drop_selected">@color/green_leaf_dark</color>
+    <color name="green_button_drop_pressed">@color/green_leaf_dark</color>
+    <color name="green_button_pressed">@color/green_leaf_dark</color>
+    <color name="green_button_selected">@color/green_leaf_light</color>
+    <color name="green_button_drop_enabled">@color/green_leaf_dark</color>
+    <color name="green_button_enabled">@color/green_leaf</color>
+    <color name="default_button_text">@color/black_text</color>
+
+    <color name="gray_disabled">@color/black25</color>
+    <color name="black_text">@color/new_gray_dark</color>
+    <color name="white_button_drop_disabled">@color/transparent</color>
+
+    <color name="black25">#40000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="new_gray_dark">#ff4c4c4c</color>
+    <color name="transparent">#00000000</color>
+    <color name="white_button_disabled">#11000000</color>
+    <color name="green_leaf">#ff77c924</color>
+    <color name="green_leaf_dark">#ff6cb51f</color>
+    <color name="green_leaf_light">#ffb6f52f</color>
+    <color name="background_dialog">#2E7D32</color>
+    <color name="background_dialogtitle">#1B5E20</color>
+    <color name="textcolor_dialog">#000000</color>
+    <color name="textcolor_dialogtitle">#FFFFFF</color>
+    <color name="textcolorproducto">#ffff5749</color>
+    <color name="subtitlesdata">#0DA617</color>
+    <color name="tabsScrollColor">#8a140e</color>
+    <color name="textcolor_drawer">#000000</color>
+
+
+
+
+
+</resources>

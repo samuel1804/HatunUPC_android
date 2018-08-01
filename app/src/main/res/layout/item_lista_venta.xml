@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegVentaActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvCodProd"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:text="Texto 5" />
+
+        <TextView
+            android:id="@+id/tvItemNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="Text 1" />
+
+
+        <EditText
+            android:id="@+id/tvItemPrecio"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLength="4"
+            android:text="0"
+            android:inputType="numberDecimal"
+            android:textSize="15dp"
+            />
+
+        <EditText
+            android:id="@+id/EdCantidad"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLength="4"
+            android:text="0"
+            android:inputType="numberDecimal"
+            android:textSize="15dp"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/background_dialogtitle"
+        android:padding="9dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ico_hatunsol"
+
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginleft_dialog"
+            android:text="@string/app_name"
+            android:textColor="@color/textcolor_dialogtitle"
+            android:textSize="@dimen/sizetitle_dialog"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="* Fecha Agenda:" />
+
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+
+        <EditText
+            android:id="@+id/etFecha"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:editable="false"
+
+            ></EditText>
+
+        <ImageButton
+            android:id="@+id/ibFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText"
+            android:layout_toRightOf="@+id/editText"
+            android:cropToPadding="true"
+            android:background="@drawable/ic_action_today"
+         />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="* Observación:"></TextView>
+
+
+    <EditText
+        android:id="@+id/etObservacion"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="300dp"
+        android:layout_height="90dp"
+        android:background="@drawable/textarea"
+        android:lines="4"
+        android:inputType="textCapSentences"
+        android:gravity="top|left">
+
+
+    </EditText>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+        <Button
+            android:id="@+id/tvAgregarObs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@color/background_material_light"
+            android:gravity="center"
+            android:text="Agregar Observación"
+            android:textStyle="bold"
+
+            />
+
+        <Button
+            android:id="@+id/tvCancelar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+
+            android:layout_margin="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@color/background_material_light"
+            android:gravity="center"
+            android:text="Cancelar"
+            android:textStyle="bold"
+
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
+

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_dialog"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_dialogtitle"
+        android:padding="9dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ico_hatunsol"
+
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/textcolor_dialogtitle"
+            android:textSize="@dimen/sizetitle_dialog"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/marginleft_dialog" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+    <LinearLayout
+        android:id="@+id/tvModificar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="10dp"
+
+        android:background="@drawable/efecto_boton_menu"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_modificar"/>
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textcolor_dialogtitle"
+        android:text="Modificar Datos"
+        android:gravity="center"
+      android:layout_marginLeft="8dp"
+        android:textSize="@dimen/textsize_dialog"
+        android:textStyle="bold"
+
+        />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/tvDetalle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="10dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/efecto_boton_menu"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_detail"/>
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textcolor_dialogtitle"
+        android:text="Ver Detalle"
+        android:gravity="center"
+        android:layout_marginLeft="8dp"
+        android:textSize="@dimen/textsize_dialog"
+        android:textStyle="bold"/>
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/tvDocumentos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/efecto_boton_menu"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_folder"
+
+            />
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textcolor_dialogtitle"
+        android:text="Documentos Adjuntos"
+        android:gravity="center"
+        android:layout_marginLeft="8dp"
+        android:textSize="@dimen/textsize_dialog"
+        android:textStyle="bold"/>
+</LinearLayout>
+        <LinearLayout
+            android:id="@+id/tvGestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/efecto_boton_menu"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_content_send_yellow"
+
+                />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textcolor_dialogtitle"
+                android:text="Enviar a Gestión"
+                android:gravity="center"
+                android:layout_marginLeft="8dp"
+                android:textSize="@dimen/textsize_dialog"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout
+        android:id="@+id/tvNoQuiere"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/efecto_boton_menu"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_content_send"
+
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textcolor_dialogtitle"
+            android:text="Enviar a No Quiere"
+            android:gravity="center"
+            android:layout_marginLeft="8dp"
+            android:textSize="@dimen/textsize_dialog"
+            android:textStyle="bold"/>
+    </LinearLayout>
+        <LinearLayout
+        android:id="@+id/tvRechazado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:padding="10dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/efecto_boton_menu"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_content_send_red"
+
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textcolor_dialogtitle"
+            android:text="Enviar a Rechazado"
+            android:gravity="center"
+            android:layout_marginLeft="8dp"
+            android:textSize="@dimen/textsize_dialog"
+            android:textStyle="bold"/>
+    </LinearLayout>
+         <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDesistio"
+        android:padding="10dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/efecto_boton_menu"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_content_send_orange"
+
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textcolor_dialogtitle"
+            android:text="Enviar a Desistio"
+            android:gravity="center"
+            android:layout_marginLeft="8dp"
+            android:textSize="@dimen/textsize_dialog"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

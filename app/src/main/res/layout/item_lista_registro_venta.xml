@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ListarVenta">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvItemCodVenta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:autoLink="web"
+            android:text="Texto 1" />
+
+        <TextView
+            android:id="@+id/tvItemFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:text="Text 2" />
+
+
+        <TextView
+            android:id="@+id/tvItemCodLocal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:text="Text 3" />
+
+        <TextView
+            android:id="@+id/tvItemTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Text 4" />
+
+        <TextView
+            android:id="@+id/tvDetalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Detalle" />
+
+        <!--<ImageView
+            android:id="@+id/btLupa"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="25dp"
+            android:background="@drawable/lupa" />-->
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

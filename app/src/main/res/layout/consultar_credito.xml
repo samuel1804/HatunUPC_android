@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    tools:context=".consultar_credito">
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/llHeader"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="4">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre:"
+                    android:textIsSelectable="true"/>
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tvDNI"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="DNI:"
+                    android:textIsSelectable="true"/>
+
+                <TextView
+                    android:id="@+id/tvDistrito"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Distrito:"
+                    android:textIsSelectable="true"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tvTelf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Telefono: " />
+                <TextView
+                    android:id="@+id/tvTelefonos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:layout_weight="1"
+                    android:textColor="@color/wallet_holo_blue_light"
+                    android:text="543534654"
+                    android:textIsSelectable="true"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvDireccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Direccion:"
+                    android:textIsSelectable="true"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvReferencia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Referencia:"
+                    android:textIsSelectable="true"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvProceso"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textIsSelectable="true"
+                    android:text="Proceso: "/>
+
+                <TextView
+                    android:id="@+id/tvBanco"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Banco:"
+                    android:textIsSelectable="true"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/title_Obs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvObservacion"
+                    android:textIsSelectable="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:text="Observación(es):"
+                    android:textColor="@color/black_text"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/btnAgendar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Agendar"
+                    style="@style/btn_green"
+                    android:textStyle="bold"
+                    android:background="@drawable/btn_green"
+                    android:drawableLeft="@android:drawable/ic_menu_my_calendar"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+
+            >
+
+
+            <LinearLayout
+                android:id="@+id/llTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llBuscar"
+                android:background="@color/green"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+
+                >
+
+                <TextView
+                    android:id="@+id/tvtextofecha"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Fecha"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:id="@+id/tvtextoobs"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="Observacion"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvtextAgenda"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="F. Agenda"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <ListView
+                android:id="@+id/lvObservacion"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fadeScrollbars="false"></ListView>
+
+
+        </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/llBuscar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <EditText
+            android:id="@+id/etBuscar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="Ingrese Obra para Buscar"
+            android:inputType="textCapSentences"
+            />
+
+        <Button
+            android:id="@+id/btnBuscar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Buscar"
+            style="@style/btn_green"
+            android:background="@drawable/btn_green"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/llBuscar"
+        android:background="@color/green"
+        android:orientation="horizontal"
+       >
+
+
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/activity_main_swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llTitulo">
+
+        <ListView
+            android:id="@+id/lvPersonas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabNew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        fab:fab_colorNormal="@color/colorAccent"
+        fab:fab_colorPressed="@color/colorAccent"
+        fab:fab_icon="@drawable/ic_action_content_add" />
+
+
+</RelativeLayout>

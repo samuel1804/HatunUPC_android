@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    >
+
+
+
+
+    <LinearLayout
+        android:id="@+id/llFiltros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llBuscar"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Supervisor : "
+
+
+            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvSupervisor"
+                android:text="Angelica Martinez"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha : "
+
+
+                />
+            <TextView
+                android:id="@+id/tvFecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/activity_main_swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llFiltros">
+
+        <ListView
+            android:id="@+id/lvProveedores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+   <!-- <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabNew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        fab:fab_colorNormal="@color/colorAccent"
+        fab:fab_colorPressed="@color/colorAccent"
+        fab:fab_icon="@drawable/ic_action_content_add" />-->
+
+
+</RelativeLayout>

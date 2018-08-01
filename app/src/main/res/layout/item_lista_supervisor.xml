@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BuscarSupervisorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/llFoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_photo"
+            android:clickable="true"
+            >
+            <TextView
+                android:id="@+id/ProveedorLocalId"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="invisible"
+                android:text=""/>
+
+            <ImageView
+                android:id="@+id/ivFoto"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/tomafoto"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="15"
+            android:orientation="vertical"
+            android:background="@drawable/btn_photo">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <TextView
+                  android:id="@+id/tvNombre"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:gravity="left"
+                  android:text="Angelica Martinez Varela"
+                  android:layout_marginTop="10dp"
+                  android:textStyle="bold"
+                  android:textSize="14sp"/>
+
+
+          </LinearLayout>
+
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Local: "
+                  android:textStyle="bold"/>
+              <TextView
+                  android:id="@+id/tvLocal"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Los Olivos" />
+
+
+
+
+
+      </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Celular: "
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/tvTelefono"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="999666777" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

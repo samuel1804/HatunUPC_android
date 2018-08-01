@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+    <LinearLayout
+        android:id="@+id/llBuscar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <EditText
+            android:id="@+id/etBuscar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="Ingrese su Obra"
+            android:inputType="textCapSentences"
+            />
+
+        <Button
+            android:id="@+id/btnBuscar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Buscar"
+            style="@style/btn_green"
+            android:background="@drawable/btn_green"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llFiltros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llBuscar"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/activity_main_swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llFiltros">
+
+        <ListView
+            android:id="@+id/lvProveedores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+
+</RelativeLayout>

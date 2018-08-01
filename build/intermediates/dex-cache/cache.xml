@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\Samuel\StudioProjects\HatunsolUPC\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.5.87\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="dd9247ea0fabe8ee479638c4b4a23e93752be256">
+        <dex dex="C:\Users\Samuel\StudioProjects\HatunsolUPC\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-6.5.87_a850229de6b5df57ca59f684ecfa1906aea6302b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Samuel\StudioProjects\HatunsolUPC\app\build\intermediates\exploded-aar\com.getbase\floatingactionbutton\1.8.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="7a055a4323187e6f6a5e63f01b5a59bff71869a5">
+        <dex dex="C:\Users\Samuel\StudioProjects\HatunsolUPC\app\build\intermediates\pre-dexed\debug\com.getbase-floatingactionbutton-1.8.0_150bd97a1ddd29b7880d4d3ac098e34e03bad630.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Samuel\StudioProjects\HatunsolUPC\app\libs\gson-2.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="C:\Users\Samuel\StudioProjects\HatunsolUPC\app\build\intermediates\pre-dexed\debug\gson-2.3.1_666d735604aec51d42546d0b712f53955ffa542d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Samuel\StudioProjects\HatunsolUPC\app\build\intermediates\exploded-aar\com.github.amlcurran.showcaseview\library\5.4.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="ebc00058bde4597b48ab5c3358a7676e942902f2">
+        <dex dex="C:\Users\Samuel\StudioProjects\HatunsolUPC\app\build\intermediates\pre-dexed\debug\com.github.amlcurran.showcaseview-library-5.4.1_87dfbf47cfd3fae5271b41b137545d6e17c7c12c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Samuel\StudioProjects\HatunsolUPC\app\libs\httpmime-4.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="f7899276dddd01d8a42ecfe27e7031fcf9824422">
+        <dex dex="C:\Users\Samuel\StudioProjects\HatunsolUPC\app\build\intermediates\pre-dexed\debug\httpmime-4.3.1_afae19c77bf3d90033f7dd70409703d1dc50dc32.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Samuel\StudioProjects\HatunsolUPC\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="C:\Users\Samuel\StudioProjects\HatunsolUPC\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.1.1_32520be0567da1b453bd18f02d8d00eb3617afbb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Samuel\StudioProjects\HatunsolUPC\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="C:\Users\Samuel\StudioProjects\HatunsolUPC\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-21.0.3_b8c1a490f9010f396984d8f4b8c6bbffcb5293bd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Samuel\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="C:\Users\Samuel\StudioProjects\HatunsolUPC\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.1_95f6e16c21f285461c59c8b404c803be659fde8c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Samuel\StudioProjects\HatunsolUPC\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="C:\Users\Samuel\StudioProjects\HatunsolUPC\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.1_f6ac1e7fbf380807160c6677946aca23fbf0eb20.jar" />
+    </item>
+
+</items>

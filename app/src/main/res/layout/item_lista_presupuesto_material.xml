@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BuscarSolicitudActivity">
+
+    <LinearLayout
+        android:id="@+id/llFerreteria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="15"
+            android:background="@drawable/btn_photo"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvObra"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="5"
+                    android:gravity="left"
+                    android:text="TECHO 1ER PISO"
+
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvPrecio"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="3"
+                    android:gravity="right"
+                    android:text="S/. 500.00"
+                    android:textSize="12sp"
+
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvNombreComercial"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:gravity="left"
+                    android:text="Ferreteria Las Hermanitas"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvTelefono"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+
+                    android:layout_weight="3"
+                    android:gravity="right"
+                    android:text="Telf: 536 - 1704"
+                    android:textSize="12sp"
+
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dirección: "
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDireccion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Av. Tupac Aamru 3618" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

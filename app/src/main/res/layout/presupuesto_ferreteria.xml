@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+
+
+    <LinearLayout
+        android:id="@+id/llFiltros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llBuscar"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/activity_main_swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btGuardar"
+        android:layout_below="@+id/llFiltros">
+
+        <ListView
+
+            android:id="@+id/lvProveedores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:listSelector="@drawable/background_listview"
+            android:choiceMode="singleChoice"
+          ></ListView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <Button
+        android:id="@+id/btGuardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar Presupuesto"
+        android:background="@drawable/btn_blue"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

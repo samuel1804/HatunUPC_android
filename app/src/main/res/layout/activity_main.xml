@@ -1,0 +1,511 @@
+<android.support.v4.widget.DrawerLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/lluno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/btMisCreditos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/efecto_boton_gris"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/registro_contacto" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Mis Créditos" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btSupervisores"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:background="@drawable/efecto_boton_gris"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/supervisor" />
+
+                    <TextView
+                        android:id="@+id/tvSupervisor"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="Supervisores" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btBuscarEstablecimientos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:background="@drawable/efecto_boton_gris"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <ImageView
+
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/establecimiento_icon" />
+
+                    <TextView
+                        android:id="@+id/tvMapaEstablecimiento"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="Buscar Establecimiento" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/btRegVentas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/efecto_boton_gris"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/logo_progresol" />
+
+                    <TextView
+                        android:id="@+id/tvVentas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Registrar Ventas" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btMaps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:background="@drawable/efecto_boton_gris"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/maps" />
+
+                    <TextView
+                        android:id="@+id/tvEstablecimiento"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="Establecimientos" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/llMenu"
+        android:layout_width="@dimen/lvmenu_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/hatunsol_logo" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/tvNombre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:text="Nombre"
+                        android:textColor="@android:color/darker_gray"
+
+                        android:textSize="14sp" />
+
+
+                    <TextView
+
+                        android:id="@+id/tvCargoNombre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:text="Cargo Nombre"
+                        android:textColor="@android:color/darker_gray"
+
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+
+                <LinearLayout
+                    android:id="@+id/llOlivos"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/ic_locales" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Los Olivos"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:id="@+id/llAte"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/ic_locales" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ate"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:id="@+id/llSJM"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/ic_locales" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="San Juan de Miraflores"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:id="@+id/llSJL"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/ic_locales" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="San Juan de Lurigancho"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:id="@+id/llCallCenter"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/ic_call_center" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/call_center"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:id="@+id/llTechnicalSupport"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/ic_call" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/technical_support"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:id="@+id/llViewInGooglePlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/ic_android" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ver en Google Play"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:id="@+id/llBugReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/ic_report_bug" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Reportar un Bug"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:id="@+id/llSalir"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/ic_salir" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cerrar Sesion"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@android:color/darker_gray" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

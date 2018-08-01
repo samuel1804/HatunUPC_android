@@ -1,0 +1,37 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="llSpinnerMarginBottom">20dp</dimen>
+
+    <dimen name="tv_title_text_size">16sp</dimen>
+    <dimen name="tv_label_text_size">16sp</dimen>
+
+    <dimen name="tvRegistroPaddingBottom">40dp</dimen>
+    <dimen name="tvSpinnerItemPaddingLeftRight">10dp</dimen>
+    <dimen name="tvSpinnerItemPaddingTopBottom">8dp</dimen>
+    <dimen name="tvSpinnerItemListNombreTextSize">14sp</dimen>
+    <dimen name="tvSpinnerItemTextSize">16sp</dimen>
+    <dimen name="tvSpinnerItemListMarginBottom">2dp</dimen>
+    <dimen name="tvSpinnerItemListMarginTop">2dp</dimen>
+    <dimen name="tvSpinnerItemListTextSize">16sp</dimen>
+    <dimen name="llSpinnerItemListPadding">1dp</dimen>
+    <dimen name="tvSpinnerItemListNombreMarginBottom">2dp</dimen>
+    <dimen name="tvSpinnerItemListNombreMarginTop">5dp</dimen>
+
+    <item type="dimen" name="card_btn_corner">10sp</item>
+    <dimen name="card_btn_padding">12.0dip</dimen>
+    <item type="dimen" name="card_btn_drop_height">3.0dip</item>
+    <dimen name="generic_margin">10.0dip</dimen>
+    <dimen name="sizetitle_dialog">20dp</dimen>
+    <dimen name="marginleft_dialog">10dp</dimen>
+    <dimen name="login_button_width">130dp</dimen>
+    <dimen name="textsize_dialog">17dp</dimen>
+
+    <dimen name="lvmenu_width">320dp</dimen>
+    <dimen name="lvmenu_marginright">56dp</dimen>
+
+    <dimen name="textsize_drawer">14sp</dimen>
+
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:background="@color/background_dialogtitle"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginRight="5dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ico_hatunsol" />
+    <TextView
+        android:id="@+id/tvIdEstablecimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:text="Titulo"
+
+            />
+
+        <TextView
+            android:id="@+id/snippet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:text="Texto Texto Texto Texto"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/btCotizar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cotizar con esta Ferretería"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/btn_blue"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

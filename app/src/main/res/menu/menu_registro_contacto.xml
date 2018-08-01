@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="pe.com.hatunsol.ferreterias.ContactoActivity">
+
+    <item
+        android:id="@+id/AgregarConyuge"
+        android:icon="@drawable/ic_action_content_add"
+        android:orderInCategory="1"
+        android:title="@string/Agregar_Conyugue"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/AgregarGarantePropiedad"
+        android:icon="@drawable/ic_action_content_add"
+        android:orderInCategory="2"
+        android:title="@string/Agregar_GarantePropiedad"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/AgregarGaranteIngresos"
+        android:icon="@drawable/ic_action_content_add"
+        android:orderInCategory="3"
+        android:title="@string/Agregar_GaranteIngresos"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/AgregarConyugueGP"
+        android:icon="@drawable/ic_action_content_add"
+        android:orderInCategory="4"
+        android:title="@string/Agregar_ConyugueGP"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/AgregarConyugeGI"
+        android:icon="@drawable/ic_action_content_add"
+        android:orderInCategory="5"
+        android:title="@string/Agregar_ConyugueGI"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/Guardar"
+        android:icon="@drawable/ic_action_content_save"
+        android:orderInCategory="2"
+        android:title="Guardar Contacto"
+        app:showAsAction="always" />
+
+   <!-- <item
+        android:id="@+id/Eliminar"
+        android:icon="@drawable/ic_action_delete_person"
+        android:orderInCategory="1"
+        android:title="Eliminar Persona"
+        app:showAsAction="always" />-->
+
+</menu>

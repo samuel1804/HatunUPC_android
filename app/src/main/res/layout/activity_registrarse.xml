@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="30dp"
+        android:layout_marginTop="30dp"
+     >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+
+        android:orientation="vertical">
+
+
+
+
+        <EditText
+            android:id="@+id/etDNI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese su DNI"
+            android:singleLine="true"
+       android:layout_marginTop="8dp"
+            android:maxLength="8"
+            android:padding="10dp"
+            android:textCursorDrawable="@null"
+
+      />
+
+        <EditText
+            android:id="@+id/etContrasenia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese Contraseña"
+            android:password="true"
+            android:singleLine="true"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="4dp"
+         />
+        <EditText
+            android:id="@+id/etContrasenia2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirmar Contraseña"
+            android:password="true"
+            android:fontFamily="sans-serif"
+            android:singleLine="true"
+            android:layout_marginTop="4dp"
+       />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/ColorTitle"
+            android:text="Datos Personales"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+        <EditText
+            android:id="@+id/etNombres"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Nombres"
+            android:singleLine="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="4dp"
+            android:inputType="textCapSentences"/>
+
+
+            <EditText
+                android:id="@+id/etApePaterno"
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Apellido"
+                android:singleLine="true"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="4dp"
+                android:inputType="textCapSentences"/>
+
+        </LinearLayout>
+
+
+
+
+        <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="4dp"
+             android:background="@drawable/spinner_background"
+
+             >
+         <Spinner
+             android:id="@+id/spDistrito"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+
+             android:hint="Ingrese Distrito al que Pertenece"
+             android:singleLine="true"
+
+            />
+
+         </LinearLayout>-->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:singleLine="true"
+            android:layout_marginTop="4dp"
+            android:maxLength="100"
+            android:inputType="textEmailAddress"/>
+        <EditText
+            android:id="@+id/etTelefonos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Celular"
+            android:singleLine="true"
+            android:layout_marginTop="4dp"
+            android:maxLength="9"
+            android:inputType="phone"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btRegistrar"
+            style="@style/btn_green"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_green"
+            android:text="Registrarme Ahora"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/btSalir"
+                style="@style/btn_green"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_blue"
+                android:text="Registrarme en otro momento" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+    </ScrollView>
+    </LinearLayout>
+

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Esto solo sera un comentario -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pe.com.hatunsol.ferreterias">
+
+    <!-- Permisos van fuera de aplication -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!--
+         The following two permissions are not required to use
+         Google Maps Android API v2, but are recommended. es para el GPS
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"></uses-permission>
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="pe.com.hatunsol.ferreterias.SplashScreenActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="pe.com.hatunsol.ferreterias.AgregarLocalActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_agregar_local"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name="pe.com.hatunsol.ferreterias.ClientesMainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_titulo"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name="pe.com.hatunsol.ferreterias.BuscarObraMOActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:icon="@drawable/ic_launcher"
+            android:label="Seleccione su Obra"
+            android:launchMode="singleTask"
+            android:parentActivityName=".BuscarPresupuestoManoActivity"
+            android:screenOrientation="portrait"></activity>
+
+
+
+        <activity
+            android:name="pe.com.hatunsol.ferreterias.BuscarPresupuestoManoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:icon="@drawable/ic_launcher"
+            android:label="Presup. de Mano de Obra"
+            android:launchMode="singleTask"
+            android:parentActivityName=".ClientesMainActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="pe.com.hatunsol.ferreterias.RegistrarseActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:icon="@drawable/ic_launcher"
+            android:label="Registro"
+            android:launchMode="singleTask"
+            android:parentActivityName=".ClientesMainActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="pe.com.hatunsol.ferreterias.BuscarSolicitudActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:icon="@drawable/ic_launcher"
+            android:label="Mis Solicitudes"
+            android:launchMode="singleTask"
+            android:parentActivityName=".ClientesMainActivity"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name="pe.com.hatunsol.ferreterias.ContactoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:icon="@drawable/ic_launcher"
+            android:label="Registrar Contacto"
+            android:launchMode="singleTask"
+            android:parentActivityName=".BuscarSolicitudActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="pe.com.hatunsol.ferreterias.BuscarProveedorActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_buscarproveedor"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".BuscarMaestroActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="Buscar Maestros"
+            android:launchMode="singleTask"
+            android:parentActivityName=".BuscarObraMOActivity"
+            android:screenOrientation="portrait"
+
+            />
+
+
+
+
+
+
+
+
+
+
+        <activity
+            android:name="pe.com.hatunsol.ferreterias.BuscarPresupuestoMaterialActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:icon="@drawable/ic_launcher"
+            android:label="Presup. de Materiales"
+            android:launchMode="singleTask"
+            android:parentActivityName=".ClientesMainActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="pe.com.hatunsol.ferreterias.BuscarObraActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:icon="@drawable/ic_launcher"
+            android:label="Seleccione su Obra"
+            android:launchMode="singleTask"
+            android:parentActivityName=".BuscarPresupuestoMaterialActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".MaterialPresupuestoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="Material para la Obra"
+            android:launchMode="singleTask"
+            android:parentActivityName=".BuscarObraActivity"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name=".MapaCliente"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:icon="@drawable/ic_launcher"
+            android:label="Presupuestar Material"
+            android:launchMode="singleTask"
+            android:parentActivityName=".MaterialPresupuestoActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".ConsultarCredito"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:icon="@drawable/ic_launcher"
+            android:label="Consultar Credito"
+            android:launchMode="singleTask"
+            android:parentActivityName=".ContactoActivity"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name="pe.com.hatunsol.ferreterias.PresupuestoFerreteriaActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:icon="@drawable/ic_launcher"
+            android:label="Seleccione una Ferretería"
+            android:launchMode="singleTask"
+            android:parentActivityName=".MapaCliente"
+            android:screenOrientation="portrait"></activity>
+
+
+
+
+
+
+
+
+
+
+        <activity
+            android:name="pe.com.hatunsol.ferreterias.LoginActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar"></activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:value="@integer/google_play_services_version" />
+
+        <!--
+        Clave Debug-->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyADkWyNs0I3g8Gqb8cNQIkNG9U2Jlcaq9A" />
+
+
+        <!-- Clave Produccion
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBC8TQM4FOlHD_QsRISuUfvlF75_k8xjR4" />-->
+
+        <service
+            android:name="pe.com.hatunsol.ferreterias.UbicacionService"
+            android:enabled="true"
+            android:exported="true"></service>
+
+        <receiver android:name="pe.com.hatunsol.ferreterias.IniciadorServicio">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+            </intent-filter>
+        </receiver>
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/llSpinnerItemListBackground"
+    android:orientation="horizontal"
+    android:padding="@dimen/llSpinnerItemListPadding">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvSpinnerItemList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/tvSpinnerItemListMarginBottom"
+            android:layout_marginTop="@dimen/tvSpinnerItemListMarginTop"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/tvSpinnerItemListTextColor"
+            android:textSize="@dimen/tvSpinnerItemListTextSize"
+            android:text="saasd" />
+
+    </LinearLayout>
+</LinearLayout>

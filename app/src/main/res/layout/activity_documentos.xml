@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lvDatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:orientation="vertical"
+android:background="#FFFFFF"
+        >
+
+        <TextView
+            android:id="@+id/tvNombres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre: Samuel Flores Hernandez" />
+
+        <TextView
+            android:id="@+id/tvDNI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="DNI: 46683050" />
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:id="@+id/llAgregarDocumento"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/btn_white"
+        android:orientation="vertical"
+android:gravity="center_vertical"
+        android:padding="0dp"
+
+        >
+
+
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+
+            >
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="8dp"
+
+                android:background="@drawable/ic_action_note_add" />
+
+            <TextView
+                android:id="@+id/tvAgregarDocumento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Agregar Nuevo Documento "
+                android:textSize="14dp">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+<!--<ImageView
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:id="@+id/ivImage"
+    android:layout_below="@+id/lvDatos"
+    />-->
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/activity_main_swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lvDatos"
+        android:layout_above="@+id/llAgregarDocumento"
+        >
+    <ListView
+        android:id="@+id/lvDocumento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+
+      ></ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>
